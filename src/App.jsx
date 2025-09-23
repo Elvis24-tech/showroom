@@ -24,7 +24,6 @@ const cars = [
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Navbar */}
       <nav className="bg-white shadow-md px-8 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-extrabold text-blue-700">🚘 Car Showroom</h1>
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
@@ -37,8 +36,6 @@ function App() {
           Contact Us
         </button>
       </nav>
-
-      {/* Hero Section */}
       <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-20">
         <h2 className="text-5xl font-extrabold mb-6">Find Your Dream Car</h2>
         <p className="text-lg max-w-2xl mx-auto">
@@ -49,8 +46,6 @@ function App() {
           Explore Cars
         </button>
       </header>
-
-      {/* Cars Grid */}
       <main className="flex-1 p-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cars.map((car) => (
           <div
@@ -72,8 +67,6 @@ function App() {
           </div>
         ))}
       </main>
-
-      {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 text-center py-6">
         <p className="text-sm">
           © {new Date().getFullYear()} Car Showroom — All Rights Reserved
